@@ -12,17 +12,23 @@
 
 <body>
 
-    <div class="cont">
+    <div class="cont" id="laterale">
         <div class="cont_img">
+
+            <img :src="images[counter].imma">
+
+            <h1> {{images[counter].titolo}} </h1>
+
+            <p> {{images[counter].text}} </p>
 
         </div>
 
-        <div class="img_laterale" id="laterale">
+        <div class="img_laterale">
             <a class="top" href="#"><i class="fas fa-chevron-circle-up"></i></a>
-            <div v-for="image in images">
 
-                <img :src="image.img">
-            </div>
+
+            <img :src="images.imma">
+
 
             <a class="bottom" href="#"><i class="fas fa-chevron-circle-down"></i></a>
 
