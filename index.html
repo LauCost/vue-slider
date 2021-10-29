@@ -18,7 +18,7 @@
     <div class="cont" id="laterale">
         <div class="cont_img">
 
-            <img :src="images[counter].imma">
+            <img :src="images[counter].immagine">
 
             <h1> {{images[counter].titolo}} </h1>
 
@@ -27,13 +27,13 @@
         </div>
 
         <div class="img_laterale">
-            <a class="top" href="#"><i class="fas fa-chevron-circle-up"></i></a>
+            <a @click="meno" class="top" href="#"><i class="fas fa-chevron-circle-up"></i></a>
 
 
-            <img v-for="image in images" :src="image.imma">
+            <img v-for="image in images" :src="image.immagine">
 
 
-            <a class="bottom" href="#"><i class="fas fa-chevron-circle-down"></i></a>
+            <a @click="piu" class="bottom" href="#"><i class="fas fa-chevron-circle-down"></i></a>
 
 
         </div>
