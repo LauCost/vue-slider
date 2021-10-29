@@ -34,9 +34,11 @@ const vueApp = new Vue({
 
         counter: 0,
 
+
     },
 
     methods: {
+
         piu() {
 
             ++this.counter
@@ -58,10 +60,7 @@ const vueApp = new Vue({
 
         }
 
-
     }
-
-
 
 })
 

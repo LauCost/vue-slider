@@ -29,8 +29,17 @@
         <div class="img_laterale">
             <a @click="meno" class="top" href="#"><i class="fas fa-chevron-circle-up"></i></a>
 
+            <div v-if="counter == i" v-for="(image, i) in images">
 
-            <img v-for="image in images" :src="image.immagine">
+                <img :src="image.immagine" class="attivo">
+
+            </div>
+
+            <div v-else>
+
+                <img :src="image.immagine" class="">
+
+            </div>
 
 
             <a @click="piu" class="bottom" href="#"><i class="fas fa-chevron-circle-down"></i></a>
